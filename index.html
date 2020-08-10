@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body">
+    <div class="background">
+        <div class="list-wrapper">
+
+            <h1> My to-do list </h1>
+            <p> Double-click an item to mark it complete </p>
+
+            <div id="form1" class="form">
+                <input type="text" onfocus="this.value=''" id="addItem">
+                <button class="button1" type="button"> Add </button>
+            </div>
+
+            <ol onload="loadCookies ()" id="list">
+            </ol>
+
+            <div class="buttons">
+                <button class="button2" type="button"> Clear Completed </button>
+                <button id="button3" type="button"> Empty List </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    </body>
+
+</html>
